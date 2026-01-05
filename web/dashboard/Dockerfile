@@ -24,8 +24,9 @@ RUN apk add --no-cache gettext
 # Copy built assets
 COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Create nginx config template with API proxy
-RUN echo 'server { \
+# Create templates directory and nginx config template with API proxy
+RUN mkdir -p /etc/nginx/templates && \
+    echo 'server { \
     listen 80; \
     \
     location /api/ { \

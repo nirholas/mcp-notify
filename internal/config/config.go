@@ -113,7 +113,7 @@ type SMTPConfig struct {
 	Port     int    `mapstructure:"port" validate:"required_if=Enabled true,min=1,max=65535"`
 	Username string `mapstructure:"username"`
 	Password string `mapstructure:"password"`
-	From     string `mapstructure:"from" validate:"required_if=Enabled true,email"`
+	From     string `mapstructure:"from" validate:"required_if=Enabled true,omitempty,email"`
 	TLS      bool   `mapstructure:"tls"`
 }
 
