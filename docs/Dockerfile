@@ -1,5 +1,6 @@
-# Dockerfile for docs site - deploy to Railway or any container platform
-# NOTE: Must be built with repo root as context (not /docs)
+# Dockerfile for MkDocs documentation site
+# Deploy to Railway or any container platform
+# IMPORTANT: Must be built with repo root as context (not /docs)
 FROM python:3.11-slim AS builder
 
 WORKDIR /build
