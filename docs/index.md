@@ -1,7 +1,6 @@
 ---
 title: MCP Notify
 description: Real-time notifications for MCP Registry changes
-template: home.html
 hide:
   - navigation
   - toc
