@@ -169,6 +169,7 @@ func Load() (*Config, error) {
 		v.SetConfigName("config")
 		v.SetConfigType("yaml")
 		v.AddConfigPath(".")
+		v.AddConfigPath("/app/")
 		v.AddConfigPath("/etc/mcp-notify/")
 		v.AddConfigPath("$HOME/.mcp-notify/")
 	}
@@ -181,7 +182,8 @@ func Load() (*Config, error) {
 	// Read config file (if exists)
 	if err := v.ReadInConfig(); err != nil {
 		if _, ok := err.(viper.ConfigFileNotFoundError); !ok {
-			return nil, fmt.Errorf("failed to read config file: %w", err)
+			// Log warning but don't fail - we can use defaults and env vars
+			fmt.Fprintf(os.Stderr, "Warning: config file issue: %v\n", err)
 		}
 		// Config file not found is okay, we'll use defaults and env vars
 	}
@@ -192,14 +194,14 @@ func Load() (*Config, error) {
 		return nil, fmt.Errorf("failed to unmarshal config: %w", err)
 	}
 
+	// Override with environment variables for sensitive data BEFORE validation
+	cfg = overrideFromEnv(cfg)
+
 	// Validate config
 	validate := validator.New()
 	if err := validate.Struct(&cfg); err != nil {
 		return nil, fmt.Errorf("config validation failed: %w", err)
 	}
-
-	// Override with environment variables for sensitive data
-	cfg = overrideFromEnv(cfg)
 
 	return &cfg, nil
 }

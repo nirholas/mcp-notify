@@ -50,8 +50,8 @@ WORKDIR /app
 COPY --from=builder /app/bin/mcp-notify /app/mcp-notify
 COPY --from=builder /app/bin/mcp-notify-cli /app/mcp-notify-cli
 
-# Copy config template
-COPY config.example.yaml /app/config.example.yaml
+# Copy config template as default config (env vars will override)
+COPY config.example.yaml /app/config.yaml
 
 # Set ownership
 RUN chown -R appuser:appgroup /app
