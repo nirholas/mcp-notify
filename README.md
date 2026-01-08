@@ -7,7 +7,7 @@
 <p align="center">
   <strong>Real-time monitoring and notifications for the MCP Registry ecosystem.</strong>
 </p>
-
+<p align="center">
   <a href="https://go.dev/">
     <img src="https://img.shields.io/badge/Go-1.22+-00ADD8?style=flat&logo=go" alt="Go Version" />
   </a>
@@ -27,9 +27,14 @@
   <a href="#-contributing">Contributing</a>
 </p>
 
-[`MCP Notify Docs`](https://mcp-notify.vercel.app)
-
-[`MCP Notify Dashboard`](https://mcp-notify-web.vercel.app)
+<p align="center">
+  <a href="https://mcp-notify.vercel.app">
+    <img src="https://img.shields.io/badge/MCP_Notify_Docs-blue" alt="MCP Notify Docs" />
+  </a>
+  <a href="https://mcp-notify.vercel.app">
+    <img src="https://img.shields.io/badge/MCP_Notify_Dashoard-purple" alt="MCP Notify Dashboard" />
+  </a>
+</p>
 
 ---
 
