@@ -5,6 +5,7 @@ import (
 	"context"
 	"fmt"
 	"net/http"
+	"os"
 	"sync"
 	"time"
 
@@ -24,6 +25,14 @@ import (
 
 	"github.com/nirholas/mcp-notify/internal/config"
 )
+
+// getHostname returns the hostname or "unknown" if it can't be determined.
+func getHostname() string {
+	if h, err := os.Hostname(); err == nil {
+		return h
+	}
+	return "unknown"
+}
 
 var (
 	// Metrics
@@ -57,18 +66,13 @@ func Setup(ctx context.Context, cfg config.TelemetryConfig) (shutdown func(conte
 		return func(ctx context.Context) error { return nil }, nil
 	}
 
-	// Create resource
-	res, err := resource.Merge(
-		resource.Default(),
-		resource.NewWithAttributes(
-			semconv.SchemaURL,
-			semconv.ServiceName(cfg.Tracing.ServiceName),
-			semconv.ServiceVersion("1.0.0"),
-		),
+	// Create resource - avoid merging with resource.Default() to prevent schema conflicts
+	res := resource.NewWithAttributes(
+		semconv.SchemaURL,
+		semconv.ServiceName(cfg.Tracing.ServiceName),
+		semconv.ServiceVersion("1.0.0"),
+		attribute.String("host.name", getHostname()),
 	)
-	if err != nil {
-		return nil, fmt.Errorf("failed to create resource: %w", err)
-	}
 
 	// Setup metrics if enabled
 	if cfg.Metrics.Enabled {
