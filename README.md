@@ -27,6 +27,10 @@
   <a href="#-contributing">Contributing</a>
 </p>
 
+[`MCP Notify Docs`](https://mcp-notify.vercel.app)
+
+[`MCP Notify Dashboard`](https://mcp-notify-web.vercel.app)
+
 ---
 
 **Never miss an MCP update again.** MCP Notify monitors the [official MCP Registry](https://registry.modelcontextprotocol.io) for changes and delivers instant notifications through Discord, Slack, email, webhooks, and more.
