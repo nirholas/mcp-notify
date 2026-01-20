@@ -5,5 +5,5 @@
   "description": "Monitor MCP registry for new servers - Discord Slack notifications alerts",
   "keywords": ["mcp", "registry", "monitor", "notifications", "discord", "slack"],
   "repository": {"url": "https://github.com/nirholas/mcp-notify", "source": "github"},
-  "packages": [{"registryType": "source", "identifier": "https://github.com/nirholas/mcp-notify"}]
+  "packages": [{"registryType": "source", "identifier": "https://github.com/nirholas/mcp-notify", "transport": {"type": "stdio"}}]
 }
