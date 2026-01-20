@@ -1,6 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.nirholas/mcp-notify",
+  "version": "1.0.0",
   "title": "MCP Registry Monitor",
   "description": "Monitor MCP registry for new servers - Discord Slack notifications alerts",
   "keywords": ["mcp", "registry", "monitor", "notifications", "discord", "slack"],
