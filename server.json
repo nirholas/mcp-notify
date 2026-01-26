@@ -1,9 +1,21 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.nirholas/mcp-notify",
+  "title": "MCP Notify",
+  "description": "Monitor MCP registry for new servers - Discord, Slack notifications and alerts",
+  "repository": {
+    "url": "https://github.com/nirholas/mcp-notify",
+    "source": "github"
+  },
   "version": "1.0.0",
-  "title": "MCP Registry Monitor",
-  "description": "Monitor MCP registry for new servers - Discord Slack notifications alerts",
-  "keywords": ["mcp", "registry", "monitor", "notifications", "discord", "slack"],
-  "repository": {"url": "https://github.com/nirholas/mcp-notify", "source": "github"}
+  "icons": {
+    "light": "https://raw.githubusercontent.com/nirholas/g1t/d9a0ee206b8136472c04384905999369f198b3c9/milady.svg",
+    "dark": "https://raw.githubusercontent.com/nirholas/g1t/d9a0ee206b8136472c04384905999369f198b3c9/bg.svg"
+  },
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "keywords": ["mcp", "notify", "monitor", "discord", "slack", "alerts", "notifications", "ai"],
+      "category": "Developer Tools"
+    }
+  }
 }
