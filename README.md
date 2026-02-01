@@ -7,7 +7,7 @@
 <p align="center">
   <strong>Real-time monitoring and notifications for the MCP Registry ecosystem.</strong>
 </p>
-<p align="center">
+<p align="center"> 
   <a href="https://go.dev/">
     <img src="https://img.shields.io/badge/Go-1.22+-00ADD8?style=flat&logo=go" alt="Go Version" />
   </a>
