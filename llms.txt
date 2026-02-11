@@ -1,0 +1,9 @@
+# mcp-notify
+
+> Monitor the Model Context Protocol (MCP) Registry for new, updated, and removed servers. Get real-time notifications via Discord, Slack, Email, Telegram, Microsoft Teams, Webhooks, or RSS feeds. Includes CLI, Go SDK, REST API, and MCP server for AI assistants.
+
+## Links
+
+- Repository: https://github.com/nirholas/mcp-notify
+- Author: https://github.com/nirholas
+- Full documentation: https://raw.githubusercontent.com/nirholas/mcp-notify/main/llms-full.txt

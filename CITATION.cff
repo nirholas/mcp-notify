@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use mcp-notify, please cite it as below."
+type: software
+title: "mcp-notify"
+abstract: "Monitor the Model Context Protocol (MCP) Registry for new, updated, and removed servers. Get real-time notifications via Discord, Slack, Email, Telegram, Microsoft Teams, Webhooks, or RSS feeds. Includes CLI, Go SDK, REST API, and MCP server for AI assistants."
+authors:
+  - alias: nirholas
+    name: nirholas
+repository-code: "https://github.com/nirholas/mcp-notify"
+url: "https://github.com/nirholas/mcp-notify"
+license: MIT
+version: "1.0.0"
+date-released: "2026-02-11"
+keywords:
+  - open-source
+  - nirholas
