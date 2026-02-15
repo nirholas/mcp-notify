@@ -28,10 +28,10 @@
 </p>
 
 <p align="center">
-  <a href="https://mcp-notify.vercel.app">
+  <a href="https://mcp-notify-eta.vercel.app">
     <img src="https://img.shields.io/badge/MCP_Notify_Docs-blue" alt="MCP Notify Docs" />
   </a>
-  <a href="https://mcp-notify.vercel.app">
+  <a href="https://mcp-notify-eta.vercel.app">
     <img src="https://img.shields.io/badge/MCP_Notify_Dashoard-purple" alt="MCP Notify Dashboard" />
   </a>
 </p>
