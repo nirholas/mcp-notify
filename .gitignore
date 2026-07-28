@@ -47,3 +47,7 @@ dist/
 *.tsbuildinfo
 *.d.ts
 vite.config.js
+
+# Environment files
+.env
+.env.local
