@@ -28,11 +28,11 @@
 </p>
 
 <p align="center">
-  <a href="https://mcp-notify-eta.vercel.app">
+  <a href="./docs">
     <img src="https://img.shields.io/badge/MCP_Notify_Docs-blue" alt="MCP Notify Docs" />
   </a>
-  <a href="https://mcp-notify-eta.vercel.app">
-    <img src="https://img.shields.io/badge/MCP_Notify_Dashoard-purple" alt="MCP Notify Dashboard" />
+  <a href="./web/dashboard">
+    <img src="https://img.shields.io/badge/MCP_Notify_Dashboard-purple" alt="MCP Notify Dashboard" />
   </a>
 </p>
 
@@ -60,7 +60,7 @@ MCP Notify monitors the [official MCP Registry](https://registry.modelcontextpro
 - **Microsoft Teams**: Adaptive Cards with full Teams integration
 
 ### Deployment Options
-- **Hosted Service**: Use our hosted instance at `watch.mcpregistry.dev`
+- **Docker Compose**: One command (`docker compose up -d`) brings up the full stack
 - **Self-Hosted**: Deploy your own instance via Docker or Kubernetes
 - **CLI Tool**: One-off checks and local monitoring
 
@@ -110,27 +110,6 @@ MCP Notify monitors the [official MCP Registry](https://registry.modelcontextpro
 
 ## 🚀 Quick Start
 
-### Using the Hosted Service
-
-```bash
-# Create a webhook subscription via API
-curl -X POST https://watch.mcpregistry.dev/api/v1/subscriptions \
-  -H "Content-Type: application/json" \
-  -d '{
-    "name": "My DeFi Alerts",
-    "filters": {
-      "keywords": ["defi", "ethereum", "swap"],
-      "namespaces": ["io.github.*"]
-    },
-    "channels": [{
-      "type": "discord",
-      "config": {
-        "webhook_url": "https://discord.com/api/webhooks/..."
-      }
-    }]
-  }'
-```
-
 ### Self-Hosted with Docker
 
 ```bash
@@ -146,6 +125,29 @@ cp .env.example .env
 docker compose up -d
 
 # Access dashboard at http://localhost:8080
+```
+
+### Create a Subscription
+
+Once your instance is running, manage subscriptions through its REST API:
+
+```bash
+# Create a webhook subscription via API
+curl -X POST http://localhost:8080/api/v1/subscriptions \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "My DeFi Alerts",
+    "filters": {
+      "keywords": ["defi", "ethereum", "swap"],
+      "namespaces": ["io.github.*"]
+    },
+    "channels": [{
+      "type": "discord",
+      "config": {
+        "webhook_url": "https://discord.com/api/webhooks/..."
+      }
+    }]
+  }'
 ```
 
 ### Using the CLI
@@ -332,13 +334,11 @@ GET /ready
 GET /metrics
 ```
 
-Full API documentation available at `/api/docs` when running the server, or see [docs/api/openapi.yaml](docs/api/openapi.yaml).
+Full API documentation available at `/api/docs` when running the server, or see [api/openapi.yaml](api/openapi.yaml).
 
 ## 🔔 Notification Formats
 
 ### Discord
-
-![Discord notification example](docs/images/discord-notification.png)
 
 Rich embeds include:
 - Server name and description
@@ -391,28 +391,6 @@ Configurable digest emails:
   "registry_url": "https://registry.modelcontextprotocol.io/v0/servers/io.github.example%2Fmy-server"
 }
 ```
-
-## 📸 Screenshots
-
-<details>
-<summary>Click to expand screenshots</summary>
-
-### Dashboard Overview
-![Dashboard Overview](docs/assets/screenshots/dashboard.png)
-
-### Changes Explorer
-![Changes Explorer](docs/assets/screenshots/changes.png)
-
-### Subscription Management
-![Subscription Management](docs/assets/screenshots/subscriptions.png)
-
-### Server Browser
-![Server Browser](docs/assets/screenshots/servers.png)
-
-### Settings
-![Settings](docs/assets/screenshots/settings.png)
-
-</details>
 
 ## 📖 Documentation
 
@@ -783,7 +761,7 @@ curl -X POST https://modelcontextprotocol.name/mcp/mcp-notify \
 
 ### Also Available On
 
-- **[SperaxOS](https://speraxos.vercel.app)** — Browse and install from the [MCP marketplace](https://speraxos.vercel.app/community/mcp)
+- **[GitHub](https://github.com/nirholas/mcp-notify)** - Source code, releases, and issue tracker
 - **All 27 MCP servers** — See the full catalog at [modelcontextprotocol.name](https://modelcontextprotocol.name)
 
 > Powered by [modelcontextprotocol.name](https://modelcontextprotocol.name) — the open MCP HTTP gateway

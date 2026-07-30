@@ -15,8 +15,6 @@ info:
     url: https://opensource.org/licenses/MIT
 
 servers:
-  - url: https://watch.mcpregistry.dev/api/v1
-    description: Production server
   - url: http://localhost:8080/api/v1
     description: Local development
 
