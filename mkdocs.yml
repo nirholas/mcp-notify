@@ -1,5 +1,5 @@
 site_name: MCP Notify
-site_url: !ENV [SITE_URL, 'https://github.com/nirholas/mcp-notify/tree/main/docs']
+site_url: !ENV [SITE_URL, 'https://mcp-notify-docs-lp642k3kpa-uc.a.run.app']
 site_description: Real-time notifications for MCP Registry changes — Monitor, track, and get alerted when MCP servers are added, updated, or removed
 site_author: nirholas
 

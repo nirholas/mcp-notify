@@ -28,7 +28,7 @@
 </p>
 
 <p align="center">
-  <a href="./docs">
+  <a href="https://mcp-notify-docs-lp642k3kpa-uc.a.run.app">
     <img src="https://img.shields.io/badge/MCP_Notify_Docs-blue" alt="MCP Notify Docs" />
   </a>
   <a href="./web/dashboard">
