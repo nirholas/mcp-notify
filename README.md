@@ -776,3 +776,26 @@ Full documentation site: **https://nirholas.github.io/mcp-notify/**
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=nirholas/mcp-notify&type=Date)](https://www.star-history.com/#nirholas/mcp-notify&Date)
+
+<!-- three.ws:growth -->
+## Support the project
+
+If mcp-notify saves you time, **[star it on GitHub](https://github.com/nirholas/mcp-notify)**. Stars are how other developers and AI agents find the repositories worth trusting, and they cost you one click.
+
+Know someone who would use it? [Post on X](https://twitter.com/intent/tweet?text=mcp-notify%3A%20Monitor%20the%20Model%20Context%20Protocol%20(MCP)%20Registry%20for%20new%2C%20updated%2C%20and%20removed%20servers&url=https%3A%2F%2Fgithub.com%2Fnirholas%2Fmcp-notify) · [Share on Bluesky](https://bsky.app/intent/compose?text=mcp-notify%3A%20Monitor%20the%20Model%20Context%20Protocol%20(MCP)%20Registry%20for%20new%2C%20updated%2C%20and%20removed%20servers%20https%3A%2F%2Fgithub.com%2Fnirholas%2Fmcp-notify) · [Share on LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgithub.com%2Fnirholas%2Fmcp-notify) · [Submit to Hacker News](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fgithub.com%2Fnirholas%2Fmcp-notify&t=mcp-notify%3A%20Monitor%20the%20Model%20Context%20Protocol%20(MCP)%20Registry%20for%20new%2C%20updated%2C%20and%20removed%20servers) · [Share on Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Fgithub.com%2Fnirholas%2Fmcp-notify&title=mcp-notify%3A%20Monitor%20the%20Model%20Context%20Protocol%20(MCP)%20Registry%20for%20new%2C%20updated%2C%20and%20removed%20servers)
+
+## Built for AI agents too
+
+Coding agents and LLM tooling can read this repo directly: [AGENTS.md](./AGENTS.md), [llms.txt](./llms.txt), [llms-full.txt](./llms-full.txt). Point an agent at `https://github.com/nirholas/mcp-notify` and it has the context it needs.
+
+## More from the same author
+
+- [All repositories by nirholas](https://github.com/nirholas/nirholas#readme): the full catalog, grouped by topic
+- [three.ws](https://three.ws): the platform for 3D AI agents with Solana wallets, a skill marketplace and x402 payments
+- Questions or ideas: [open an issue](https://github.com/nirholas/mcp-notify/issues) or [start a discussion](https://github.com/nirholas/mcp-notify/discussions)
+
+## Contributors
+
+[![Contributors](https://contrib.rocks/image?repo=nirholas/mcp-notify)](https://github.com/nirholas/mcp-notify/graphs/contributors)
+
+<!-- /three.ws:growth -->
