@@ -171,7 +171,7 @@ mcp-notify-cli subscribe \
 ## 📦 Installation
 
 ### Prerequisites
-- Go 1.22+ (for building from source)
+- Go 1.26+ (for building from source)
 - PostgreSQL 15+ (for persistence)
 - Redis 7+ (optional, for caching)
 - Docker & Docker Compose (for containerized deployment)
