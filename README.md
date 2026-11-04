@@ -28,7 +28,7 @@
 </p>
 
 <p align="center">
-  <a href="https://mcp-notify-docs-lp642k3kpa-uc.a.run.app">
+  <a href="https://mcp-notify.modelcontextprotocol.name">
     <img src="https://img.shields.io/badge/MCP_Notify_Docs-blue" alt="MCP Notify Docs" />
   </a>
   <a href="./web/dashboard">
@@ -768,7 +768,7 @@ curl -X POST https://modelcontextprotocol.name/mcp/mcp-notify \
 
 ## Documentation
 
-Full documentation site: **https://nirholas.github.io/mcp-notify/**
+Full documentation site: **https://mcp-notify.modelcontextprotocol.name/** (MkDocs on Cloudflare Pages; build and deploy steps in [docs/contributing/docs-deployment.md](docs/contributing/docs-deployment.md)).
 
 - [Getting started](docs/getting-started.md) covers install and first run.
 - [Examples](docs/examples.md) has copy-paste snippets.

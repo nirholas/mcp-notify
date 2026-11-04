@@ -1,5 +1,5 @@
 site_name: MCP Notify
-site_url: !ENV [SITE_URL, 'https://mcp-notify-docs-lp642k3kpa-uc.a.run.app']
+site_url: !ENV [SITE_URL, 'https://mcp-notify.modelcontextprotocol.name/']
 site_description: Real-time notifications for MCP Registry changes — Monitor, track, and get alerted when MCP servers are added, updated, or removed
 site_author: nirholas
 
@@ -87,6 +87,7 @@ plugins:
       enable_creation_date: true
       type: timeago
   - git-committers:
+      enabled: !ENV [GIT_COMMITTERS_ENABLED, true]
       repository: nirholas/mcp-notify
       branch: main
 
@@ -237,6 +238,7 @@ nav:
     - Code Style: contributing/code-style.md
     - Testing: contributing/testing.md
     - Pull Requests: contributing/pull-requests.md
+    - Docs Deployment: contributing/docs-deployment.md
   
   - Changelog: changelog.md
   - Tags: tags.md
