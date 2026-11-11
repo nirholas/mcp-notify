@@ -1,0 +1,1 @@
+{"name":"mcp-notify","owner":{"name":"nirholas"},"description":"Search and inspect the official MCP Registry from an AI assistant.","plugins":[{"name":"mcp-notify","source":"./plugins/mcp-notify","description":"Search, list and inspect servers in the official MCP Registry with the mcp-notify-mcp Go server.","category":"development","tags":["mcp","registry","discovery","go"]}]}

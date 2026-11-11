@@ -1,0 +1,1 @@
+{"name":"mcp-notify","version":"1.0.0","description":"Search, list and inspect servers in the official MCP Registry through the mcp-notify-mcp Go server.","author":{"name":"nirholas"},"repository":"https://github.com/nirholas/mcp-notify","homepage":"https://mcp-notify.modelcontextprotocol.name","keywords":["mcp","registry","discovery","go"]}
